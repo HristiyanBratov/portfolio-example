@@ -1,0 +1,52 @@
+#experience-page{
+    height: 180vh;
+    background-color: $secondary-background-color;
+
+    @include media-desktop{
+        height: 100vh;
+    }
+
+    .js-experience-container{
+        @include flexCenter;
+        flex-direction: column;
+
+        @include media-desktop{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 3.5em;
+        }
+
+        .experience-info{
+            margin-top: 2em;
+
+            @include media-desktop{
+                max-width: 82%;
+                margin: 2em auto ;
+            }
+
+            &-start{
+                color: $heading-color;
+
+                &::after{
+                    content: " ";
+                    display: inline-block;
+                    width: 90%;
+                    height: 1px;
+                    background-color: $text-color;
+                    margin: 0 0 3px 10px;
+                }
+            }
+
+            &-title{
+                color: $heading-color;
+                margin-top: 15px;
+            }
+
+            &-subtitle{
+                color: #ada286;
+                margin: 5px 0 15px 0;
+            }
+        }
+
+    }
+}

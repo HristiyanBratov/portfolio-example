@@ -1,0 +1,46 @@
+#about-me-page{
+    background-color: $secondary-background-color;
+
+    .content{
+
+        @include media-desktop{
+            max-width: 575px;
+            height: 100%;
+            margin: 0 auto 0 30em;
+            padding: 0;
+        }
+
+        &__about-me{
+            text-align: justify;
+        }
+
+        &__about-me-img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 50px 0 60px 0;
+
+            @include media-desktop{
+                width: 325px;
+                height: 325px;
+                position: absolute;
+                transform: translateY(-5%);
+                right: 20em;
+            }
+        }
+
+        &__about-me-btns{
+            width: 350px;
+            display: flex;
+            justify-content: space-around;
+
+            @include media-desktop{
+                width: 575px;
+                display: inline;
+                justify-content: left;
+                margin-top: 50px;
+            }
+        }
+
+    }
+}

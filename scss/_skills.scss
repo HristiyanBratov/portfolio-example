@@ -1,0 +1,69 @@
+#skills-page{
+    height: 190vh;
+
+    @include media-desktop{
+        height: 100vh;
+    }
+
+    .content{
+        @include media-desktop{
+           margin: 0 8em;
+        }
+    }
+
+    .js-skill-container{
+        text-align: center;
+
+        @include media-desktop{
+            display: flex;
+            text-align: justify;
+        }
+
+        .js-skill{
+            margin-top: 3em;
+
+            @include media-desktop{
+                margin: 3em 3em 0 0;
+            }
+        
+            .page-heading{
+                margin-top: 18px;
+            }
+        }
+    }
+
+    .js-skill-progress-container{
+        width: 390px;
+        margin-top: 3em;
+
+        @include media-desktop{
+            width: 850px;
+        }
+
+        .progress{
+            margin-top: 40px;
+
+            &-percentage{
+                display: flex;
+                justify-content: space-between;
+
+                span{
+                    margin-bottom: 8px;
+                    color: $heading-color;
+                    font-family: $heading-font-family;
+                    font-weight: bold;
+                }
+            }
+
+            &-bar{
+                height: 2px;
+                background-color: $secondary-background-color;
+
+                .percentage{
+                    height: 4px;
+                    background-color: $heading-color;
+                }
+            }
+        }
+    }
+}

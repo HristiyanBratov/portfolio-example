@@ -1,0 +1,40 @@
+$primary-background-color: #EED9C4;
+$secondary-background-color: #F8E6D3;
+$heading-color: #7D5A4F;
+$text-color: #323232;
+$heading-font-family: 'Roboto Slab';
+$text-font-family: 'Lato';
+$supportive-font-family: 'Sedan SC';
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin media-desktop{
+    @media (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-mobile{
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

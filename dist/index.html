@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Sedan+SC&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <title>Hristiyan Bratov</title>
+</head>
+<body>
+
+    <div class="navigation">
+        <nav class="navigation__nav">
+            <a href="index.html" class="navigation__nav-name">Hristiyan Bratov</a>
+
+            <div class="navigation__nav-menu">
+                <ul class="navigation__nav-menu-list">
+                    <li class="navigation__nav-menu-list-item">
+                        <a href="#home-page" class="navigation__nav-menu-list-item-link">
+                            <i class="ri-corner-right-up-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="navigation__nav-menu-list-item">
+                        <a href="#about-me-page" class="navigation__nav-menu-list-item-link">
+                            <i class="ri-corner-right-up-line"></i>
+                            <span>About Me</span>
+                        </a>
+                    </li>
+
+                    <li class="navigation__nav-menu-list-item">
+                        <a href="#skills-page" class="navigation__nav-menu-list-item-link">
+                            <i class="ri-corner-right-up-line"></i>
+                            <span>Skills</span>
+                        </a>
+                    </li>
+
+                    <li class="navigation__nav-menu-list-item">
+                        <a href="#experience-page" class="navigation__nav-menu-list-item-link">
+                            <i class="ri-corner-right-up-line"></i>
+                            <span>Experience</span>
+                        </a>
+                    </li>
+
+                    <li class="navigation__nav-menu-list-item">
+                        <a href="#projects-page" class="navigation__nav-menu-list-item-link">
+                            <i class="ri-corner-right-up-line"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+
+                    <li class="navigation__nav-menu-list-item">
+                        <a href="#education-page" class="navigation__nav-menu-list-item-link">
+                            <i class="ri-corner-right-up-line"></i>
+                            <span>Education</span>
+                        </a>
+                    </li>
+
+                    <li class="navigation__nav-menu-list-item">
+                        <a href="#contact-me-page" class="navigation__nav-menu-list-item-link">
+                            <i class="ri-corner-right-up-line"></i>
+                            <span>Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="navigation__nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+
+                <div class="navigation__nav-social">
+                    <a href="https://github.com/HristiyanBratov" target="_blank" class="navigation__nav-social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/hristiyanbratov/" target="_blank" class="navigation__nav-social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="navigation__nav-social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navigation__nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </div>
+
+    <header id="home-page">
+        <div class="container">
+            <span class="container__heading first-part">&ltI'm </span>
+            <span class="container__heading second-part"></span>
+        </div>
+
+        <a href="#about-me-page"><img src="./images/down-arrow.png" class="down-arrow"></a>
+    </header>
+
+    <section id="about-me-page">
+        <div class="content">
+            <div class="content__about-me">
+                <h3 class="page-heading">ABOUT ME</h3>
+
+                <div class="content__about-me-description page-description-text">
+                    <p>
+                        Currently, I am exploring the world of a <span style="color: #7D5A4F; font-weight: bold;">software engineer</span> and delving into various technologies to understand how they work. I would describe myself as enthusiastic and open-minded, dedicated to personal growth and development. Friendly and communicative with a strong sense of responsibility.
+                    </p>
+                        <br>
+                    <p>
+                        Apart from being a <span style="color: #7D5A4F; font-weight: bold;">back-end developer</span>, sport is my next significant passion. Quite experienced table tennis player and current gym lover. I also enjoy walking in nature with a group of friends, watching movies as well as staying up to date with the changes in the automobile world.
+                    </p>
+                </div>
+            </div>
+
+            <img src="./images/me2.JPG" class="content__about-me-img">
+
+            <div class="content__about-me-btns">
+                <button class="button" onclick="window.open('./documents/CV.pdf')">Download CV</button>
+                <a href="#contact-me-page"><button class="button">Contact me</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-page">
+        <div class="content">
+            <h3 class="page-heading">SKILLS</h3>
+
+            <div class="js-skill-container"></div>
+            <div class="js-skill-progress-container"></div>
+
+        </div>
+    </section>
+
+    <section id="experience-page">
+        <div class="content">
+            <h3 class="page-heading">EXPERIENCE</h3>
+            
+            <div class="js-experience-container"></div>
+        </div>
+    </section>
+
+    <section id="projects-page">
+        <div class="content">
+            <h3 class="page-heading">PROJECTS</h3>
+
+            <div class="js-projects-container"></div>
+        </div>
+    </section>
+
+    <section id="education-page">
+        <div class="content">
+            <h3 class="page-heading">EDUCATION</h3>
+
+            <div class="content__education">
+                <div class="content__education-container">
+                    <div class="content__education-container-item">
+                        <h4 class="content__education-container-item-heading">Technical University of Sofia</h4>
+                        <p class="content__education-container-item-text">
+                            Bachelor in Informatics and Software Science <br>
+                            Sofia, Bulgaria
+                        </p>
+                    </div>
+
+                    <div class="content__education-container-date">
+                        September 2012 - June 2016
+                    </div>
+                </div>
+
+                <div class="content__education-container">
+                    <div class="content__education-container-item">
+                        <h4 class="content__education-container-item-heading">SU "Nikolay Katranov"</h4>
+                        <p class="content__education-container-item-text">
+                            English and Informatics <br>
+                            Svishtov, Bulgaria
+                        </p>
+                    </div>
+
+                    <div class="content__education-container-date">
+                        September 2007 - June 2012
+                    </div>
+                </div>              
+            </div>
+
+            <h3 class="page-heading content__second-heading">ADDITIONAL COURSES</h3>
+
+            <div class="content__courses">
+                <div class="content__courses-item">
+                    <h4 class="content__education-container-item-heading">SoftUni</h4>
+                    <p class="page-description-text">
+                        <span>Courses:</span> C# Basics, C# Fundamentals, C# Advanced, C# OOP, MS SQL Server, Entity Framework Core, C# Web Basics, ASP.NET Core.
+                    </p>
+                </div>
+
+                <div class="content__courses-item">
+                    <h4 class="content__education-container-item-heading">Udemy</h4>
+                    <p class="page-description-text">
+                        <span>Courses:</span> Design Patterns in C# and .NET, Master the Art of Writing Clean Code in C#.
+                    </p>
+                </div>
+
+                <div class="content__courses-item">
+                    <h4 class="content__education-container-item-heading">freeCodeCamp</h4>
+                    <p class="page-description-text">
+                        <span>Courses:</span> Front End Developer Roadmap, Frontend Web Development: In-Depth Project Tutorial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-me-page">
+        <div class="content">
+            <h3 class="page-heading">CONTACTS</h3>
+
+            <div class="content__contacts">
+                <div class="content__contacts-container">
+                    <div class="content__contacts-container-info">
+                        <p class="page-description-text">You can contact me by dialing...</p>
+                        <div class="content__contacts-container-info-item">
+                            <img src="./images/contacts-phone.png" class="content__contacts-container-info-item-image">
+                            <a href="tel:+359880202667" class="content__contacts-container-info-item-data">(+359) 880-202-667</a>
+                        </div>
+                    </div>
+    
+                    <div class="content__contacts-container-info">
+                        <p class="page-description-text">or by sending me an email...</p>
+                        <div class="content__contacts-container-info-item">
+                            <img src="./images/contacts-email.png" class="content__contacts-container-info-item-image">
+                            <a href="mailto:bratovhristiyan@gmail.com" class="content__contacts-container-info-item-data">bratovhristiyan@gmail.com</a>
+                        </div>
+                    </div>
+    
+                    <div class="content__contacts-container-info">
+                        <p class="page-description-text">or by coming to my office...</p>
+                        <div class="content__contacts-container-info-item">
+                            <img src="./images/contacts-office.png" class="content__contacts-container-info-item-image">
+                            <a href="https://www.google.com/maps/place/Expo+2000+Office+Park/@42.666879,23.3232354,17z/data=!3m1!4b1!4m6!3m5!1s0x40aa84518140bbf3:0x75ed9a3bea7132f4!8m2!3d42.6668751!4d23.3258103!16s%2Fg%2F11c2njr9px?entry=ttu" target="_blank" class="content__contacts-container-info-item-data">Expo 2000 Office Park, Sofia, Bulgaria</a>
+                        </div>
+                    </div>
+    
+                    <div class="content__contacts-container-info">
+                        <p class="page-description-text">or most conveniently, fill out the form...</p>
+                    </div>
+                </div>
+    
+                <div class="content__git">
+                    <h3 class="page-heading" style="margin-top: 3.5em;">GET IN TOUCH</h3>
+    
+                    <form action="https://api.web3forms.com/submit" method="POST" class="content__git-form">
+                        <input type="hidden" name="access_key" value="814005b8-df00-42bf-a83d-bc2a828da01a">
+                        <input type="text" name="name" placeholder="Your Name" class="content__git-form-inputs" required>
+                        <input type="email" name="email" placeholder="Your Email" class="content__git-form-inputs" required>
+                        <textarea name="message" placeholder="Your Message" class="content__git-form-inputs content__git-form-inputs-textarea" required></textarea>
+                        <button type="submit" class="button content__git-form-button">Submit <img src="./images/right-arrow.png"></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

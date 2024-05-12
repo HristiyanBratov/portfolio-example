@@ -1,0 +1,62 @@
+#education-page{
+    background-color: $secondary-background-color;
+
+    .content{
+        font-size: 19px;
+
+        &__education{
+            margin: 2em 0;
+            @include media-desktop{
+                display: flex;
+            }
+    
+            &-container{
+                margin-bottom: 2em;
+
+                @include media-desktop{
+                    margin: 2em 6em;
+                }
+                
+                &-item-heading{
+                    color: $heading-color;
+                    font-size: 20px;
+                    font-family: $heading-font-family;
+                }
+    
+                &-item-text{
+                    color: grey;
+                    line-height: 22px;
+                    font-family: $text-font-family;
+                }
+    
+                &-date{
+                    color: $text-color;
+                    font-weight: bold;
+                    margin-top: 10px;
+                    font-family: $supportive-font-family;
+                }
+            }
+        }
+
+        &__courses{
+
+            &-item{
+                margin-top: 18px;
+                text-align: center;
+
+                @include media-desktop{
+                    text-align: left;
+                    max-width: 825px;
+                }
+
+                p{
+                    span{
+                        color: #7D5A4F; 
+                        font-weight: 900;
+                    }
+                }
+            }
+            
+        }
+    }
+}
